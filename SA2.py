@@ -35,7 +35,7 @@ space.gravity = (0, 981)
 draw_options = pymunk.pygame_util.DrawOptions(screen)
   
 font = pygame.font.Font(None, 36)
-ball = create_ball(space)  # Add bouncing ball
+ball_body, ball_shape = create_ball(space)
 
 paddle_body, paddle = create_paddle(space, angle=0.1)  # Line starts slightly slanted
     
