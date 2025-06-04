@@ -8,7 +8,7 @@ def create_ball(space):
     shape = pymunk.Circle(body, 20)
     shape.elasticity = 0.2 # Bounciness
     space.add(body, shape)
-    return shape
+    return body, shape
 def create_paddle(space, angle):
     body = pymunk.Body(body_type=pymunk.Body.KINEMATIC)
     body.position = (400, 550)
