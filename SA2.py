@@ -60,7 +60,7 @@ while running:
     
     space.step(1/60)
     space.debug_draw(draw_options)
-    if paddle_body.position.y > 600:
+    if ball_body.position.y > 600:
             game_over = True
     else:
             frame_count += 1
